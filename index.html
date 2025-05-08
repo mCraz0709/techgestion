@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechGestión | Soluciones Tecnológicas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #00000;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #1e1e2f;
+      text-decoration: none;
+      border: 1px solid #1e1e2f;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #1e1e2f;
+      color: white;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, select, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #1e1e2f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechGestión</h1>
+    <p>Nosotros lo resolvemos y tú sigues trabajando</p>
+  </header>
+
+  <nav>
+    <a href="#empresas">Empresas</a>
+    <a href="#instituciones">Instituciones</a>
+    <a href="#particulares">Hogares</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="section" id="empresas">
+    <h2>Servicios para Empresas</h2>
+    <div class="card">
+      <p>• Diagnóstico de redes y conectividad</p>
+      <p>• Mejora de señal Wi-Fi y monitoreo con Wireshark</p>
+      <p>• Reparación de hardware/software y asesoría técnica</p>
+      <p>• Conexión con proveedores de servicios empresariales</p>
+    </div>
+  </section>
+
+  <section class="section" id="instituciones">
+    <h2>Servicios para Instituciones</h2>
+    <div class="card">
+      <p>• Diagnóstico de cobertura en escuelas (NetSpot, WiFi Analyzer)</p>
+      <p>• Políticas de seguridad y respaldo de información</p>
+      <p>• Capacitación docente y soporte continuo</p>
+    </div>
+  </section>
+
+  <section class="section" id="particulares">
+    <h2>Servicios para Hogares</h2>
+    <div class="card">
+      <p>• Solución a problemas de internet y dispositivos lentos</p>
+      <p>• Asesoría para contratar servicios (Internet, TV, etc.)</p>
+      <p>• Configuración de equipos y mantenimiento</p>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <form onsubmit="event.preventDefault(); alert('Gracias por contactarnos. Te responderemos pronto por WhatsApp o correo.');">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="text" name="nombre empresa" placeholder="Escribe el nombre de tu empresa" required />
+      <input type="email" name="correo" placeholder="Tu correo" required />
+      <select name="tipo">
+        <option value="empresa">Empresa</option>
+        <option value="institucion">Institución</option>
+        <option value="hogar">Hogar</option>
+      </select>
+      <textarea name="mensaje" rows="4" placeholder="Describe el problema en un breve resumen..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+    <p style="margin-top: 1rem; text-align: center;">
+      También puedes escribirnos por <strong>WhatsApp</strong> al <a href="https://wa.me/525512345678" target="_blank">+52 55 1234 5678</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechGestión. Tecnología al alcance de todos.</p>
+    <p>Correo: contacto@techgestion.com | WhatsApp: +52 55 1234 5678</p>
+  </footer>
+</body>
+</html>
